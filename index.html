@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="R.ico" type="image/x-icon">
+
+  <title>Rodrigo Rabuske</title>
+</head>
+
+<body>
+  <header>
+    <h1>Rodrigo Rabuske</h1>
+
+    <!-- Barra de Navegação -->
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bloco de Apresentação !-->
+  <main class="apresentacao">
+    <img src="imagens/rodrigo.jpg" class="fotoPerfil" alt="Foto de perfil de Rodrigo Rabuske">
+    <h2 class="nome">Rodrigo Rabuske</h2>
+    <h3 class="titulo">Desenvolvedor Web Front-End</h3>
+  </main>
+
+  <br>
+
+  <!-- SOBRE MIM  !-->
+
+  <!-- Título Sobre Mim -->
+  <h2 class="titulos" id="sobre">Sobre Mim</h2>
+
+  <!-- Container principal - Sobre MIM !-->
+  <div class="container-sobre">
+    <div class="bloco-texto">
+      <p>E aí! Meu nome é Rodrigo Rabuske! Sou um estudante amador em programação, apaixonado por computadores desde os
+        7 anos de idade. Atualmente, graduando o 3º semestre do Bacharelado em Ciência da Computação pela UNINTER, na
+        modalidade de Ensino a Distância (EAD), tenho me dedicado ao aprimoramento contínuo das minhas habilidades na
+        área de computação e tecnologias.
+      </p>
+      <p>Possuo conhecimentos básicos em HTML, CSS e JavaScript, além de familiaridade com o Visual Studio Code e também
+        do framework Bootstrap. Gosto muito de programar sites, códigos e, recentemente, estou aprendendo a utilizar
+        ferramentas como Unity 6 para programar jogos! Estou comprometido em expandir meu aprendizado e adquirir
+        experiência prática para me tornar um profissional qualificado em Tecnologia da Informação.
+      </p>
+    </div>
+  </div>
+
+  <!-- Formação Educacional !-->
+  <!-- Título da Formação -->
+  <h2 class="titulos" id="formacao">Formação Educacional</h2>
+
+  <div class="container-formacao">
+    <div class="bloco-texto">
+      <p><strong>Ensino Médio:</strong> Escola Estadual de Ensino Médio Frederico Kops, concluído em 2019.</p>
+      <p><strong>Curso Técnico:</strong> Lógica de Programação – SENAC Santa Cruz, setembro de 2022 - maio de
+        2023.</p>
+      <p><strong>Graduação:</strong> Ciência da Computação – UNINTER (EAD), em andamento (2024 - 2028).</p>
+      <p><strong>Linguagens:</strong> HTML, CSS, JavaScript, Python, Node.js, PHP.</p>
+      <p><strong>Idiomas:</strong> Inglês (nível básico)</p>
+
+    </div>
+  </div>
+
+  <!-- Portfólio -->
+   <!-- Título do Portfólio -->
+  <h2 class="titulos" id="portfolio">Portfólio</h2>
+  <h3 class="tituloh3"> Meus projetos</h3>
+
+  <!-- DIV que contém o container dos projetos do Portfólio-->
+  <div class="portfolio-container">
+    <!-- Projeto 1 -->
+    <div class="card-projeto">
+      <a href="https://afesonono.github.io/BlueLimpezas/" target="_blank" class="projeto1">
+        <img src="imagens/bluelimpezas.png" alt="Projeto 1">
+      </a>
+      <h3>Blue Limpezas</h3>
+      <p>Projeto 1 - Um site criado com HTML e CSS para empresa fictícia especializada em limpeza.</p>
+    </div>
+
+    <!-- Projeto 2 -->
+    <div class="card-projeto">
+      <a href="https://afesonono.github.io/BMWprojeto/" target="_blank">
+        <img src="imagens/BMW.svg.png" alt="Projeto 2">
+      </a>
+      <h3>Site BMW</h3>
+      <p>Projeto 2 - Site simples com tema BMW criado a partir de um template pedido por um cliente fictício com HTML e
+        CSS.</p>
+    </div>
+
+    <!-- Projeto 3 -->
+    <div class="card-projeto">
+      <a href="https://afesonono.github.io/JogoDaVelha/" target="_blank">
+        <img src="imagens/jogodavelha.png" alt="Projeto 3">
+      </a>
+      <h3>Jogo da Velha</h3>
+      <p>Projeto 3 - Jogo da Velha criado com linguagem HTML.</p>
+    </div>
+  </div>
+
+<!-- Contato -->
+<!-- Título do Contato -->
+<h2 class="titulos" id="contato">Contato</h2>
+
+<!-- Fórmulário na qual usuários colocam seu nome, e-mail e mensagem para entrar em contato comigo (Rodrigo Rabuske) -->
+<div class="container-contato">
+  <form class="form-contato" action="mailto:rodrigorabuske820@gmail.com">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<!-- Rodapé que contém informações adicionais -->
+<footer class="footer">
+  <p>&copy; Todos os direitos reservados - 2025. Desenvolvido por <a href="#">Rodrigo Rabuske</a>.</p>
+</footer>
+
+</body>
+
+</html>

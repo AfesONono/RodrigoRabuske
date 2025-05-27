@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding-top: 100px;
+}
+
+.titulos {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #063183;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+/* Parte estilizada para ajeitar links da barra de navegação*/
+/* Ao clicar no link do menu do site, o link lhe redicionará até lá, sem a barra de navegação ficar em cima do título*/
+
+#sobre,
+#formacao,
+#portfolio,
+#contato {
+  scroll-margin-top: 120px;
+}
+
+/*Parte responsável pela estilização da navegação do topo da página do site*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: rgb(6, 49, 131);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 500;
+}
+
+header h1 {
+  color: white;
+  margin-top: 31px;
+  font-size: 1.7em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 31px;
+  display: flex;
+  justify-content: left;
+  gap: 25px;
+  padding-right: 60px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Ao passar o mouse em cima de um dos links da barra de navegação, ele mudará de cor*/
+nav ul li a:hover {
+  text-decoration: underline;
+  background-color: rgb(41, 139, 168);
+  color: #000000;
+}
+
+/* Bloco de apresentação do Perfil com foto, nome e título (Desenvolvedor Web Front End) */
+.apresentacao {
+  text-align: center;
+  margin: 130px auto 20px auto;
+}
+
+.fotoPerfil {
+  margin-top: 20px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nome {
+  margin: 10px;
+  font-size: 32px;
+  color: #063183;
+}
+
+.titulo {
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  color: #383838;
+}
+
+/* Parte estilizada do CSS do ''Sobre MIM'' do site */
+.container-sobre {
+  max-width: 1000px;
+  margin: 40px auto 70px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+.bloco-texto p {
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* Parte estilizada do CSS da Formação*/
+
+/* Formação Educacional */
+
+.container-formacao {
+  max-width: 1000px;
+  margin: 40px auto 70px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+.formacao-conteudo {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.bloco-texto p {
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* Parte estilizada para o Portfólio */
+
+.tituloh3 {
+  margin: 5px 0 0 0;
+  font-size: 30px;
+  color: #383838;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 30px auto 60px auto;
+  max-width: 1100px;
+}
+
+/* O Card-projeto é o cartão que irá conter o conteúdo dos projetos do portfólio*/
+.card-projeto {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card-projeto:hover {
+  transform: scale(1.03);
+  background-color: #73eeee;
+}
+
+.card-projeto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-projeto h3 {
+  font-size: 22px;
+  color: #063183;
+  margin-top: 15px;
+}
+
+.card-projeto p {
+  font-size: 16.5px;
+  color: #131313;
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Parte estilizada para o Formulário de Contato */
+
+.container-contato {
+  max-width: 800px;
+  margin: 40px auto 70px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 2px solid black;
+  text-align: left;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato label {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #063183;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Ao focar (apertar) nos campos de nome, email ou mensagem, o campo será destacado */
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: #063183;
+  outline: none;
+  box-shadow: 0 0 5px rgba(6, 49, 131, 0.3);
+}
+
+/* Estilização do botão */
+.form-contato button {
+  background-color: #063183;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Ao passar o mouse no botão, ele mudará de cor*/
+.form-contato button:hover {
+  background-color: #041d53;
+}
+
+/* Estilização do Rodapé do site */
+.footer {
+  background-color: #063183;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+/* RESPONSIVIDADE - MOBILE */
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 0;
+    /* <-- parte que permite retirar o espaço extra no topo no celular */
+  }
+
+  /* HEADER ajustado para mobile */
+  header {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Barra de Navegação ajustada*/
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 1.1em;
+    padding: 8px 12px;
+  }
+
+  /* Bloco de APRESENTAÇÃO ajustado */
+  .apresentacao {
+    margin: 30px 10px 20px 10px;
+  }
+
+  .fotoPerfil {
+    width: 75vw;
+    height: 75vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .nome {
+    font-size: 26px;
+  }
+
+  .titulo {
+    font-size: 16px;
+  }
+
+  /* Bloco SOBRE MIM ajustado */
+  .container-sobre {
+    padding: 15px 20px;
+    margin: 20px 10px 40px 10px;
+  }
+
+  .bloco-texto h2 {
+    font-size: 24px;
+  }
+
+  .bloco-texto p {
+    font-size: 16px;
+  }
+
+.bloco-texto {
+  padding: 15px;
+  font-size: 0.95rem;
+}
+
+/* Conteúdo de Formação ajustado */
+.container-formacao {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.bloco-texto {
+  padding: 15px;
+  font-size: 0.95rem;
+}
+
+/* Responsividade do Portfólio e cards ajustados */
+.portfolio-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-projeto {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+/* Formulário de Contato responsivo */
+.container-contato {
+  margin: 20px 10px 40px 10px;
+  padding: 20px;
+}
+
+.form-contato label {
+  font-size: 16px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  font-size: 14px;
+}
+
+.form-contato button {
+  font-size: 16px;
+}
+
+/* Footer responsivo para mobile*/
+  .footer {
+    padding: 15px 10px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .footer p {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .footer a {
+    display: inline-block;
+    margin: 5px 0;
+    word-break: break-word;
+  }
+}
